@@ -1,0 +1,36 @@
+{
+  "name": "typescript-graphql-patch",
+  "version": "1.0.0",
+  "description": "typescript-graphql-patch",
+  "keywords": [],
+  "homepage": "https://github.com/mo36924/typescript-graphql-patch#readme",
+  "bugs": {
+    "url": "https://github.com/mo36924/typescript-graphql-patch/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo36924/typescript-graphql-patch.git"
+  },
+  "license": "MIT",
+  "author": "mo36924",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": "./dist/bin.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "sort": "sort-package-json",
+    "postinstall": "node -e \"try{import('./dist/index.js').then(m=>m.default()).catch(()=>{})}catch(e){}\""
+  },
+  "prettier": {
+    "printWidth": 120,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.0",
+    "sort-package-json": "^1.50.0",
+    "typescript": "^4.3.2"
+  }
+}
